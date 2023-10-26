@@ -1,0 +1,233 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 0.5rem;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+.headerContainer {
+    height: 10%;
+    background-color: #111217;
+    color: #DEE1F3;
+}
+
+.navContainer {
+    padding: 0.5rem;
+    display: flex;
+    width: 100%;
+    font-size: large;
+}
+
+.titleHeaderContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ulContainer {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #DEE1F3;
+}
+
+a:active {
+    color: #ADB6EA;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* header */
+
+/* footer */
+.footerContainer {
+    height: 10%;
+    background-color: #111217;
+    color: #DEE1F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContainer>.footerNameContainer>h1,
+h3 {
+    margin: 0.1rem;
+}
+
+.footerNameContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLicContainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerRedesContainer {
+    width: 20%;
+}
+
+.footerRedesContainer>ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* footer */
+
+/*main*/
+.mainContainer {
+    height: 80%;
+}
+
+/*home*/
+.homeContainer {
+    background-size: 100% 100%;
+    background-image: url("../IMG/back4.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 100%;
+    color: #DEE1F3;
+}
+
+.homeContainer>div>h1 {
+    margin: 0;
+}
+
+/*home*/
+/*login*/
+.loginContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 50rem;
+    height: 40rem;
+    background-color: #ADB6EA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.formContainer>h2 {
+    font-size: large;
+}
+
+.inputContainerLogin {
+    width: 21rem;
+    height: 2.5rem;
+    gap: 0.5rem;
+    display: flex;
+    background-color: #DEE1F3;
+    justify-content: space-between;
+    padding-right: 1rem;
+    align-items: center;
+}
+
+.inputContainerLogin>label {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.inputContainerLogin>input,
+.inputContainerLogin>input:hover,
+.inputContainerLogin>input:active {
+    list-style: none;
+    border: none;
+    background-color: #DEE1F3;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*login*/
+
+/*admin*/
+.containerTitle {
+    text-align: center;
+}
+
+.containerTitle {
+    font-size: 2rem;
+}
+
+.tableContainer{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tableContainer > th {
+    background-color: #f2f2f2;
+    
+}
+
+.tableContainer th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-container button.delete {
+    color: red;
+}
+.btn-container button.edit {
+    color: green;
+}
+/*admin*/
+/*main*/

@@ -1,0 +1,57 @@
+<main class="mainContainer">
+    <div class="containerTitle">
+        <h1>
+            PANEL DE ADMINISTRADOR
+        </h1>
+    </div>
+    <table class="tableContainer">
+        <thead>
+            <h2>Lista de mensajes</h2>
+            <div>
+                <input type="checkbox" name="clearAll" id="btnClearAll">
+                <label for="btnClearAll">Borrar todo</label>
+                <button disabled>Limpiar</button>
+            </div>
+
+            <tr>
+                <td>
+                    #
+                </td>
+                <td>
+                    Email
+                </td>
+                <td>
+                    message
+                </td>
+                <td>
+                    Actions
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>
+                    {{index}}
+                </td>
+                <td>
+                    {{email}}
+                </td>
+                <td>
+                    {{message}}
+                </td>
+                <td>
+                    <div>
+                        <button>
+                            delete
+                        </button>
+                        <button>
+                            edit
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</main>
